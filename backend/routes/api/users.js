@@ -28,6 +28,7 @@ const validateSignup = [
     handleValidationErrors
 ];
 
+//Signup ===============================================>
 router.post('/', validateSignup, async (req, res) => {
     const { email, password, username } = req.body;
     const hashedPassword = bcrypt.hashSync(password);
@@ -47,7 +48,7 @@ router.post('/', validateSignup, async (req, res) => {
 }
 );
 
-// Restore session user
+// Restore session user ================================>
 router.get('/', (req, res) => {
     const { user } = req;
     if (user) {

@@ -10,19 +10,34 @@ module.exports = {
     options.tableName = 'Reviews'
     return queryInterface.bulkInsert(options, [
       {
-        email: 'demo@user.io',
-        username: 'Demo-lition',
-        hashedPassword: bcrypt.hashSync('password')
+        userId: 1,
+        productId: 2,
+        rating: 4,
+        body: 'The sofa is great, soft and very comfy!'
       },
       {
-        email: 'user1@user.io',
-        username: 'FakeUser1',
-        hashedPassword: bcrypt.hashSync('password2')
+        userId: 1,
+        productId: 3,
+        rating: 4,
+        body: 'Have had the chair for a little over two weeks and love it.'
       },
       {
-        email: 'user2@user.io',
-        username: 'FakeUser2',
-        hashedPassword: bcrypt.hashSync('password3')
+        userId: 2,
+        productId: 2,
+        rating: 5,
+        body: 'Expensive but worth every penny.'
+      },
+      {
+        userId: 3,
+        productId: 7,
+        rating: 4,
+        body: 'Beautiful, well-made chairs. And they are nice and light. Would recommend to anyone.'
+      },
+      {
+        userId: 3,
+        productId: 15,
+        rating: 4,
+        body: 'Elevates space and looks elegant but not boring. If you want something stylish without sacrificing comfort then its the chair for you!'
       }
     ], {});
   },

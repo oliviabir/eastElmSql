@@ -27,17 +27,17 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       imgOne: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       imgTwo: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       imgThree: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       imgFour: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,

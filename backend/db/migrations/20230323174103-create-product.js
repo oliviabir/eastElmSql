@@ -22,7 +22,8 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       imgOne: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       imgTwo: {
         type: Sequelize.STRING

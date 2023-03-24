@@ -48,4 +48,17 @@ router.delete('/:id', requireAuth, async (req, res) => {
     res.json({ message: 'Successfully deleted' })
 })
 
+//Get users' reviews ================================>
+router.get('/', requireAuth, async (req, res) => {
+    const userReviews = await Review.findAll({
+        where: {
+            userId: req.user.id
+        }
+    })
+
+    if (!userReviews) return res.json({ message: 'You have no reviews' })
+
+    res.json(userReviews)
+})
+
 module.exports = router

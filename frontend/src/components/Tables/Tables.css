@@ -1,0 +1,38 @@
+.tables-container {
+    padding-top: 170px;
+    margin-top: 5%;
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.table-link-image {
+    height: 67%;
+    max-width: 75%;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rgb(41, 41, 41);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active {
+    border-top: 1px dotted rgb(41, 41, 41);
+    border-bottom: 1px dotted rgb(41, 41, 41);
+}
+.table-link-name {
+    font-size: 20px;
+}
+
+.table-link-price {
+    text-decoration: none;
+}

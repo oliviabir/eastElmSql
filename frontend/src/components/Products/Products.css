@@ -1,0 +1,39 @@
+.product-container {
+    padding-top: 170px;
+    margin-top: 5%;
+    margin-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-link-image {
+    height: 67%;
+    max-width: 75%;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rgb(41, 41, 41);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active {
+    border-top: 1px dotted rgb(41, 41, 41);
+    border-bottom: 1px dotted rgb(41, 41, 41);
+}
+
+.product-link-name {
+    font-size: 20px;
+}
+
+.product-link-price {
+    text-decoration: none;
+}

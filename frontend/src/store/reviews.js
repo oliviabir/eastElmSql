@@ -1,12 +1,12 @@
 import { csrfFetch } from './csrf';
 
-const VIEW_USER_REVIEWS = 'reviews/VIEW_USER_REVIEWS'
+const VIEW_REVIEWS = 'reviews/VIEW_REVIEWS'
 const REMOVE_REVIEW = 'reviews/REMOVE_REVIEW'
 const ADD_REVIEW = 'reviews/ADD_REVIEW'
 const EDIT_REVIEW = 'reviews/EDIT_REVIEW'
 
 const view = (reviews) => ({
-    type: VIEW_USER_REVIEWS,
+    type: VIEW_REVIEWS,
     reviews
 })
 
@@ -25,7 +25,7 @@ const edit = (review) => ({
     review
 })
 
-export const viewUserReviews = () => async (dispatch) => {
+export const viewReviews = () => async (dispatch) => {
     const response = await csrfFetch('/api/reviews')
 
     if (response.ok) {

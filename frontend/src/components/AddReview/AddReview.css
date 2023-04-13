@@ -1,0 +1,61 @@
+.errors-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-messages {
+    color: #a1283c;
+    font-weight: 500;
+    padding: 1%;
+}
+
+#required-message {
+    margin: 5%;
+    padding-left: 11%;
+}
+
+.rating-container {
+    padding-left: 40%;
+}
+
+.rating-button-container {
+    padding-left: 25%;
+}
+
+#rating-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.on {
+    color: #000;
+}
+
+.off {
+    color: #ccc;
+}
+
+.review-submit-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-review-input {
+    font-size: 16px;
+    height: 70px;
+    width: 220px;
+    overflow-wrap: anywhere;
+    margin: 10px 10px 20px 10px;
+    resize: none;
+}
+
+#add-review-btn {
+    background-color: #851023;
+    color: white;
+    border: none;
+    width: 226px;
+    height: 30px;
+    margin-left: 10px;
+}

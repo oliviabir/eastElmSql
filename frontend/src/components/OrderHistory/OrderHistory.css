@@ -1,0 +1,58 @@
+.order-history-container {
+    padding-top: 170px;
+}
+
+.order-history-header {
+    font-size: 28px;
+    font-weight: 400;
+    margin-left: 5%;
+}
+
+.no-orders-tag {
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+.order-card-container {
+    margin: 3% 5% 0 5%;
+    display: grid;
+    grid-template-columns: .75fr 1fr 1fr;
+    border-bottom: 1px solid rgb(175, 170, 170);
+}
+
+.item-img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.order-info-container {
+    grid-column-start: 2;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.product-price {
+    margin-bottom: 5%;
+}
+
+.delete-item-container {
+    grid-column-start: 3;
+}
+
+.cancel-order-btn {
+    background-color: #851023;
+    color: white;
+    border: none;
+    padding: 1% 3% 1% 3%;
+    position: relative;
+    left: 85%;
+}
+
+.cancel-order-btn:hover {
+    cursor: pointer;
+}

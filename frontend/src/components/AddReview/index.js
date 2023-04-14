@@ -35,8 +35,8 @@ const AddReviewForm = ({ productId, setShowModal }) => {
         }
 
         const payload = {
-            user_id: sessionUser.id,
-            product_id: productId,
+            userId: sessionUser.id,
+            productId: productId,
             rating,
             body
         }

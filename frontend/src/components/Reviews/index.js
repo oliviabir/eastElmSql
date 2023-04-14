@@ -17,7 +17,8 @@ const Reviews = ({ id, product }) => {
         return Object.values(state.reviews)
     })
 
-    const reviews = reviewsState.filter(review => review.product_id == id)
+    const reviews = reviewsState.filter(review => review.productId == id)
+
 
     const ratingArr = [1, 2, 3, 4, 5]
 
@@ -45,7 +46,7 @@ const Reviews = ({ id, product }) => {
                         )
                     })}
                     <div id='review-body'>{review.body}</div>
-                    {(sessionUser?.id == review.user_id) ? (
+                    {(sessionUser?.id == review.userId) ? (
                         <div>
                             <EditReview review={review} />
                             <DeleteReview review={review} productId={id} />

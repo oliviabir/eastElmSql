@@ -46,7 +46,7 @@ export const removeReview = (id) => async (dispatch) => {
 }
 
 export const addReview = (payload) => async (dispatch) => {
-    const response = await csrfFetch('/api/reviews/new', {
+    const response = await csrfFetch('/api/reviews', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -78,7 +78,7 @@ const reviewsReducer = (state = {}, action) => {
     switch(action.type) {
         case VIEW_REVIEWS:
             const normalizedReviews = {}
-            action.reviews.reviews.forEach((review) => {
+            action.reviews.forEach((review) => {
                 normalizedReviews[review.id] = review
             })
             return {...normalizedReviews}

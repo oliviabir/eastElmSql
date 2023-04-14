@@ -36,7 +36,7 @@ const productsReducer = (state = {}, action) => {
     switch (action.type) {
         case VIEW_PRODUCTS:
             const normalizedProducts = {}
-            action.products.products.forEach((product) => {
+            action.products.forEach((product) => {
                 normalizedProducts[product.id] = product
             })
             return { ...normalizedProducts }

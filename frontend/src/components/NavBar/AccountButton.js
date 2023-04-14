@@ -14,7 +14,7 @@ const AccountButton = () => {
 
     const demoLogin = async (e) => {
         e.preventDefault();
-        await dispatch(login('demo@aa.io', 'password'));
+        await dispatch(login('demo@user.io', 'password'));
     };
 
     const openMenu = () => {

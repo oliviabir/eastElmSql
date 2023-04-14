@@ -31,7 +31,7 @@ const SignUpForm = () => {
         <Redirect to='/' />
       }
     } else {
-      const data = await dispatch(signUp(username, email, password, repeatPassword));
+      const data = await dispatch(signUp(username, email, password));
       if (data) {
         let errorsArr = []
 

@@ -15,7 +15,7 @@ const OrderHistory = () => {
         return Object.values(state.orders)
     })
 
-    const usersOrders = orders.filter(order => order?.user_id === sessionUser?.id)
+    const usersOrders = orders.filter(order => order?.userId === sessionUser?.id)
 
     useEffect(() => {
         dispatch(viewOrders())

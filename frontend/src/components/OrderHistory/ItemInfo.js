@@ -12,7 +12,7 @@ const ItemInfo = ({ order }) => {
         return Object.values(state.products)
     });
 
-    const itemArr = products.filter(product => product.id == order.product_id)
+    const itemArr = products.filter(product => product.id == order.productId)
     const item = itemArr[0]
 
     const getProductPrice = (price) => {
@@ -34,7 +34,7 @@ const ItemInfo = ({ order }) => {
             <img src={item?.img_one} alt={`${item?.name}-image`} className='item-img' />
             <div className='order-info-container'>
                 <div className='product-name'>{item?.name}</div>
-                <div className='product-price'>${getProductPrice(item.price)}</div>
+                <div className='product-price'>${getProductPrice(item?.price)}</div>
                 <div className='product-editable-info'>Quantity: {order.num_of_product ? order.num_of_product : 1}</div>
                 <div className='product-editable-info'>Instructions: {order.instructions}</div>
                 <EditOrder order={order} />

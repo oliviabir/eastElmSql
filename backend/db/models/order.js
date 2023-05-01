@@ -11,14 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Order.belongsTo(models.User, { foreignKey: 'userId' })
-      Order.belongsTo(models.Product, { foreignKey: 'productId' })
+      Order.belongsToMany(models.Product, {
+        foreignKey: 'orderId',
+        otherKey: 'productId',
+        through: 'OrderProducts'
+      })
     }
   }
   Order.init({
     userId: {
-      type: DataTypes.INTEGER
-    },
-    productId: {
       type: DataTypes.INTEGER
     },
     quantity: {

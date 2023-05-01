@@ -20,9 +20,6 @@ module.exports = {
           model: 'Users'
         }
       },
-      quantity: {
-        type: Sequelize.INTEGER
-      },
       instructions: {
         type: Sequelize.TEXT
       },

@@ -22,9 +22,6 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       type: DataTypes.INTEGER
     },
-    quantity: {
-      type: DataTypes.INTEGER
-    },
     instructions: {
       type: DataTypes.TEXT
     }

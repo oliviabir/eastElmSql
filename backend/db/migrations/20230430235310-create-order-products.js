@@ -17,14 +17,16 @@ module.exports = {
       orderId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Orders'
-        }
+          model: 'Orders',
+        },
+        onDelete: 'CASCADE'
       },
       productId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Products'
-        }
+          model: 'Products',
+        },
+        onDelete: 'CASCADE'
       },
       quantity: {
         type: Sequelize.INTEGER

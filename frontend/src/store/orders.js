@@ -58,7 +58,7 @@ const ordersReducer = (state = {}, action) => {
     switch (action.type) {
         case VIEW_ORDERS:
             const normalizedOrders = {}
-            action.orders.orders.forEach((order) => {
+            action.orders.forEach((order) => {
                 normalizedOrders[order.id] = order
             })
             return {...normalizedOrders}
